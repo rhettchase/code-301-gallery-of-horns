@@ -1,10 +1,22 @@
-function App() { // match to file name
+import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HornedBeast from './components/HornedBeast';
+import Gallery from './components/Gallery'
 
-  return <h1>I Live!</h1>
+function App() {
+  // match to file name
+  return (
+    <>
+      <Header />
+      <HornedBeast />
+      <Gallery />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
-
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'

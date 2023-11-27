@@ -1,8 +1,20 @@
-# React + Vite
+# LAB - 01
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Gallery of Horns
 
-Currently, two official plugins are available:
+I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Author: Rhett Chase
+
+### Links and Resources
+
+- [submission PR](http://xyz.com)
+- Any Links you used as reference
+
+### Lighthouse Accessibility Report Score
+
+- Provide a screenshot of your score after running a Lighthouse Accessibility report.
+
+### Reflections and Comments
+
+- Consider including the answers to your daily journal and submission questions here
