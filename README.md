@@ -2,19 +2,22 @@
 
 ## Gallery of Horns
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+I built an app that displays images and information of horned animals. The app takes information on each animal and displays it in a Gallery of Horns.
 
 ### Author: Rhett Chase
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
-- Any Links you used as reference
+- [submission PR](https://github.com/rhettchase/code-301-gallery-of-horns)
+- chatGPT
 
 ### Lighthouse Accessibility Report Score
 
-- Provide a screenshot of your score after running a Lighthouse Accessibility report.
+![Acessibility](./src/assets/accessibility.png)
 
 ### Reflections and Comments
 
-- Consider including the answers to your daily journal and submission questions here
+- I learned that workflow when working with React will need to be different to not throw errors
+- I learned how to import and export different components to be used throughout the app using `import` and `export`
+- I used the provided `.json` data and iterated over the array of objects by using the `.map()` method
+- I used `props` to dynamically render content on the page
