@@ -1,3 +1,13 @@
+
+
 body {
   font-family: 'Courier New', Courier, monospace;
+}
+
+header,footer {
+  background-color: lightblue;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
