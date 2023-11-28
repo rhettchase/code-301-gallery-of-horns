@@ -1,18 +1,19 @@
 import HornedBeast from './HornedBeast';
+import jsonData from '../assets/HornedBeast.json'
 
 function Gallery() {
   return (
     <>
-      <HornedBeast
-        title='UniWhal'
-        description='A unicorn and a narwhal nuzzling their horns'
-        imgUrl='http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg'
-      />
-      <HornedBeast
-        title='uniWhal'
-        description='A unicorn and a narwhal nuzzling their horns'
-        imgUrl='http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg'
-      />
+    {jsonData.map((item) => ( // map over the jsonData array
+        <HornedBeast
+        key={item._id}
+        imgUrl={item.image_url}
+        title={item.title}
+        description={item.description}
+        keyword={item.keyword}
+        horns={item.horns}
+        />
+    ))}
     </>
   );
 }
