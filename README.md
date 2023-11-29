@@ -1,4 +1,4 @@
-# LAB - 01
+# LAB - 01, 02
 
 ## Gallery of Horns
 
@@ -15,9 +15,38 @@ I built an app that displays images and information of horned animals. The app t
 
 ![Acessibility](./src/assets/accessibility.png)
 
+### Time Estimate (lab-02)
+
+#### Feature #1 Display Images
+
+- Estimate of time needed to complete: 1 hr
+- Start time: 3 pm
+- Finish time: 4:30 pm
+- Actual time needed to complete: 1.5 hrs
+*note: I already had this set up as part of stretch goal; I updated the .json file. To get this to dynamically render using the Col and Row plus styling, it took longer than expected*
+
+#### Feature #2 Allow Users to Favorite Individual Beasts
+
+- Estimate of time needed to complete: 1.5 hrs
+- Start time: 4:30
+- Finish time: 5:30
+- Actual time needed to complete: 1 hr
+
+#### Feature #3 Bootstrap
+
+- Estimate of time needed to complete: 45 min
+- Start time: 4 pm
+- Finish time: 5 pm
+- Actual time needed to complete: 1 hr
+*note: I did this throughout feature 1 and 2 as well*
+
 ### Reflections and Comments
+
+#### Lab 01
 
 - I learned that workflow when working with React will need to be different to not throw errors
 - I learned how to import and export different components to be used throughout the app using `import` and `export`
 - I used the provided `.json` data and iterated over the array of objects by using the `.map()` method
 - I used `props` to dynamically render content on the page
+
+#### Lab 02

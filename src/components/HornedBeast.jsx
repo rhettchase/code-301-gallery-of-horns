@@ -1,14 +1,25 @@
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import BeastImage from './BeastImage';
+
+
 function HornedBeast(props) {
   return (
-    <>
-      <h2>{props.title}</h2>
-      <img src={props.imgUrl} alt={props.title} />
-      <p>{props.description}</p>
-      <p>Keyword: {props.keyword}</p>
-      <p>Horns: {props.horns}</p>
-    </>
+    <div>
+      <Container>
+        <Row>
+          <Col>
+            <h2>{props.title}</h2>
+            <div className='d-flex justify-content-center'>
+              <BeastImage imgUrl={props.imgUrl} />
+            </div>
+            <p>{props.description}</p>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 
 export default HornedBeast;
-
