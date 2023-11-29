@@ -1,28 +1,38 @@
+import { useState } from 'react';
 import Image from 'react-bootstrap/Image';
-import { useEffect, useState } from 'react';
 import Heart from 'react-animated-heart';
+import SelectedBeast from './SelectedBeast';
 
 export default function BeastImage(props) {
   const initialCount = 0;
   const [count, setCount] = useState(initialCount);
   const [status, setStatus] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   // run the setStatus logic after the count state has been updated. The dependency array [count] ensures that the effect runs whenever count changes.
   // reference: chatGPT
 
-  useEffect(() => {
-    setStatus(count > 0);
-  }, [count]);
-
   function add() {
     setCount(count + 1);
+    setStatus(true);
   }
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <section>
       <div style={{ position: 'relative' }}>
         <Image
-          onClick={add}
+          onClick={() => {
+            add();
+            openModal();
+          }}
           src={props.imgUrl}
           alt={props.title}
           roundedCircle
@@ -43,6 +53,15 @@ export default function BeastImage(props) {
         />
         <p>Number of votes is {count}</p>
       </div>
+      {showModal && <SelectedBeast
+        show={showModal}
+        title={props.title}
+        imgUrl={props.imgUrl}
+        description={props.description}
+        onClose={closeModal}
+      />}
     </section>
   );
 }
+
+

@@ -7,11 +7,14 @@ function HornedBeast(props) {
   return (
     <Container>
       <CardGroup>
-        <Card>
+        <Card style={{ width: '18rem'}}>
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
             <div className='d-flex justify-content-center'>
-              <BeastImage imgUrl={props.imgUrl} />
+              <BeastImage 
+              title={props.title}
+              imgUrl={props.imgUrl}
+              description={props.description} />
             </div>
             <Card.Text>{props.description}</Card.Text>
           </Card.Body>
