@@ -35,8 +35,8 @@ I built an app that displays images and information of horned animals. The app t
 #### Feature #3 Bootstrap
 
 - Estimate of time needed to complete: 45 min
-- Start time: 4 pm
-- Finish time: 5 pm
+- Start time: 5 pm
+- Finish time: 6 pm
 - Actual time needed to complete: 1 hr
 *note: I did this throughout feature 1 and 2 as well*
 
