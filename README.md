@@ -50,3 +50,10 @@ I built an app that displays images and information of horned animals. The app t
 - I used `props` to dynamically render content on the page
 
 #### Lab 02
+
+- I used `bootstrap` to implement styling such as rounded images
+- I learned how to use `className` properties in React to style the elements
+- I imported `Heart` to create animated heart image that changes when clicked on and when the image is clicked on
+  - I added a wrapper `div` around the `Image` and `Heart` components and attached the onClick event to this wrapper div
+  - I used the `stopPropagation` method to prevent the click event from propagating to the parent `div`, ensuring that clicking the heart doesn't trigger the click event on the parent div (which increments the count)
+- To handle the asynchronous nature of the useState function, I used `useEffect` hook run the `setStatus` logic after the count state has been updated to ensure the correct `status` after each click
