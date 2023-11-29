@@ -10,12 +10,10 @@ function Gallery() {
       <Row className='align-items-center'>
         {jsonData.map(
           (
-            item,
-            index // map over the jsonData array
+            item // map over the jsonData array; key goes in outermost component
           ) => (
-            <Col key={index} xs={6} md={4}>
+            <Col key={item._id} xs={6} md={4}> 
               <HornedBeast
-                key={item._id}
                 imgUrl={item.image_url}
                 title={item.title}
                 description={item.description}
