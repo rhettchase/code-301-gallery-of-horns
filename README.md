@@ -10,6 +10,7 @@ I built an app that displays images and information of horned animals. The app t
 
 - [submission PR](https://github.com/rhettchase/code-301-gallery-of-horns)
 - chatGPT
+- MDN
 
 ### Lighthouse Accessibility Report Score
 
@@ -40,6 +41,15 @@ I built an app that displays images and information of horned animals. The app t
 - Actual time needed to complete: 1 hr
 *note: I did this throughout feature 1 and 2 as well*
 
+### Time Estimate (lab-03)
+
+#### Feature #1 Display a Modal
+
+- Estimate of time needed to complete: 2.5 hrs
+- Start time: 2 pm
+- Finish time:
+- Actual time needed to complete:
+
 ### Reflections and Comments
 
 #### Lab 01
@@ -57,3 +67,5 @@ I built an app that displays images and information of horned animals. The app t
   - I added a wrapper `div` around the `Image` and `Heart` components and attached the onClick event to this wrapper div
   - I used the `stopPropagation` method to prevent the click event from propagating to the parent `div`, ensuring that clicking the heart doesn't trigger the click event on the parent div (which increments the count)
 - To handle the asynchronous nature of the useState function, I used `useEffect` hook run the `setStatus` logic after the count state has been updated to ensure the correct `status` after each click
+
+#### Lab 03
