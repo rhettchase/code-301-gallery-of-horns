@@ -1,29 +1,23 @@
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-export default function HornForm() {
+
+export default function HornForm(props) {
+
+  const handleChange = (event) => {
+    props.onSelect(event.target.value);
+    
+  }
   return (
-    <Form>
-      <fieldset disabled>
-        <Form.Group className='mb-3'>
-          <Form.Label htmlFor='disabledTextInput'>Disabled input</Form.Label>
-          <Form.Control id='disabledTextInput' placeholder='Disabled input' />
-        </Form.Group>
-        <Form.Group className='mb-3'>
-          <Form.Label htmlFor='disabledSelect'>Disabled select menu</Form.Label>
-          <Form.Select id='disabledSelect'>
-            <option>Disabled select</option>
-          </Form.Select>
-        </Form.Group>
-        <Form.Group className='mb-3'>
-          <Form.Check
-            type='checkbox'
-            id='disabledFieldsetCheck'
-            label="Can't check this"
-          />
-        </Form.Group>
-        <Button type='submit'>Submit</Button>
-      </fieldset>
-    </Form>
+    <Form.Select onChange={handleChange}>
+      <option value='All'>All</option>
+      <option value='1'>1</option>
+      <option value='2'>2</option>
+      <option value='3'>3</option>
+      <option value='100'>100</option>
+    </Form.Select>
   );
 }
+
+
+
