@@ -1,3 +1,4 @@
+// reference: chatGPT
 import { useState } from 'react';
 import Image from 'react-bootstrap/Image';
 import Heart from 'react-animated-heart';
@@ -8,9 +9,6 @@ export default function BeastImage(props) {
   const [count, setCount] = useState(initialCount);
   const [status, setStatus] = useState(false);
   const [showModal, setShowModal] = useState(false);
-
-  // run the setStatus logic after the count state has been updated. The dependency array [count] ensures that the effect runs whenever count changes.
-  // reference: chatGPT
 
   function add() {
     setCount(count + 1);
@@ -53,15 +51,15 @@ export default function BeastImage(props) {
         />
         <p>Number of votes is {count}</p>
       </div>
-      {showModal && <SelectedBeast
-        show={showModal}
-        title={props.title}
-        imgUrl={props.imgUrl}
-        description={props.description}
-        onClose={closeModal}
-      />}
+      {showModal && (
+        <SelectedBeast
+          show={showModal}
+          title={props.title}
+          imgUrl={props.imgUrl}
+          description={props.description}
+          onClose={closeModal}
+        />
+      )}
     </section>
   );
 }
-
-

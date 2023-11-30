@@ -1,10 +1,11 @@
+// reference: chatGPT
 import HornedBeast from './HornedBeast';
 import jsonData from '../assets/HornedBeast.json';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-function Gallery() {
+ export default function Gallery() {
   return (
     <Container>
       <Row className='align-items-center'>
@@ -12,7 +13,7 @@ function Gallery() {
           (
             item // map over the jsonData array; key goes in outermost component
           ) => (
-            <Col key={item._id} xs={6} md={4}> 
+            <Col key={item._id} xs={6} md={4}>
               <HornedBeast
                 imgUrl={item.image_url}
                 title={item.title}
@@ -28,5 +29,3 @@ function Gallery() {
   );
 }
 
-
-export default Gallery;

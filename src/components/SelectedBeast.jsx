@@ -1,9 +1,10 @@
+// reference: chatGPT
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 export default function SelectedBeast(props) {
-    return (
-      <Modal show={props.show} onHide={props.onClose}>
+  return (
+    <Modal show={props.show} onHide={props.onClose}>
       <Modal.Header closeButton>
         <Modal.Title>{props.title}</Modal.Title>
       </Modal.Header>
@@ -22,5 +23,4 @@ export default function SelectedBeast(props) {
       </Modal.Footer>
     </Modal>
   );
-  }
-  
+}

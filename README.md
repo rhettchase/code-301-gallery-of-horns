@@ -1,4 +1,4 @@
-# LAB - 01, 02
+# LAB - 01, 02, 03
 
 ## Gallery of Horns
 
@@ -47,8 +47,8 @@ I built an app that displays images and information of horned animals. The app t
 
 - Estimate of time needed to complete: 2.5 hrs
 - Start time: 2 pm
-- Finish time:
-- Actual time needed to complete:
+- Finish time: 3:45 pm
+- Actual time needed to complete: 2.25 hrs
 
 ### Reflections and Comments
 
@@ -66,6 +66,12 @@ I built an app that displays images and information of horned animals. The app t
 - I imported `Heart` to create animated heart image that changes when clicked on and when the image is clicked on
   - I added a wrapper `div` around the `Image` and `Heart` components and attached the onClick event to this wrapper div
   - I used the `stopPropagation` method to prevent the click event from propagating to the parent `div`, ensuring that clicking the heart doesn't trigger the click event on the parent div (which increments the count)
-- To handle the asynchronous nature of the useState function, I used `useEffect` hook run the `setStatus` logic after the count state has been updated to ensure the correct `status` after each click
 
 #### Lab 03
+
+- I converted the gallery to use `Card` and `CardGroup` to display the title, image and description of the Beasts
+- I created `SelectedBeast` component which uses a `Modal` to render the selected Beast as a large card when clicked on
+- `BeastImage` component includes all of the useState functionality for when an image is clicked on, icluding:
+  - Counting the number of votes for each beast (each click = 1 vote)
+  - Changing the heart color to red when it is clicked on at least once
+  - Render the modal of a large card for the selected beast when clicked on
