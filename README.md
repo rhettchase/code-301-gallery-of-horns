@@ -11,6 +11,7 @@ I built an app that displays images and information of horned animals. The app t
 - [submission PR](https://github.com/rhettchase/code-301-gallery-of-horns)
 - chatGPT
 - MDN
+- [React Bootstrap Dev Docs](https://react-bootstrap.netlify.app/)
 
 ### Lighthouse Accessibility Report Score
 
