@@ -1,4 +1,4 @@
-# LAB - 01, 02, 03
+# LAB - 01, 02, 03, 04
 
 ## Gallery of Horns
 
@@ -9,6 +9,7 @@ I built an app that displays images and information of horned animals. The app t
 ### Links and Resources
 
 - [submission PR](https://github.com/rhettchase/code-301-gallery-of-horns)
+- [Deployed Site](https://gallery-of-horns-rhett.netlify.app/)
 - chatGPT
 - MDN
 - [React Bootstrap Dev Docs](https://react-bootstrap.netlify.app/)
@@ -51,6 +52,15 @@ I built an app that displays images and information of horned animals. The app t
 - Finish time: 3:45 pm
 - Actual time needed to complete: 2.25 hrs
 
+### Time Estimate (lab-04)
+
+#### Feature #1 Filter by Number of Horns
+
+- Estimate of time needed to complete: 2.5 hrs
+- Start time: 2 pm
+- Finish time: 4:30 pm
+- Actual time needed to complete: 2.5 hrs
+
 ### Reflections and Comments
 
 #### Lab 01
@@ -72,7 +82,15 @@ I built an app that displays images and information of horned animals. The app t
 
 - I converted the gallery to use `Card` and `CardGroup` to display the title, image and description of the Beasts
 - I created `SelectedBeast` component which uses a `Modal` to render the selected Beast as a large card when clicked on
-- `BeastImage` component includes all of the useState functionality for when an image is clicked on, icluding:
+- `BeastImage` component includes all of the useState functionality for when an image is clicked on, including:
   - Counting the number of votes for each beast (each click = 1 vote)
   - Changing the heart color to red when it is clicked on at least once
   - Render the modal of a large card for the selected beast when clicked on
+
+#### Lab 04
+
+- I used the `Form.Select` component to allow the user to select how many horns they wanted the displayed beasts to have
+- Based on the user selection for number of horns, the beasts displayed in the `Gallery` is filtered to display those with that number of horns
+- I used the `filter()` method to achieve this
+- I included logic to display all beasts when `All` was selected
+- I utilized the `useState` hook to set the beasts displayed
