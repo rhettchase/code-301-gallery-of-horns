@@ -23,8 +23,8 @@ function App() {
   return (
     <>
       <Header title='Gallery of Horns' />
-      <Gallery beasts={filteredBeasts} />
       <HornForm onSelect={handleSelect} />
+      <Gallery beasts={filteredBeasts} />
       <Footer author='Rhett Chase' />
     </>
   );

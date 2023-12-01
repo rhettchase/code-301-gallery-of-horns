@@ -7,8 +7,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 function HornedBeast(props) {
   return (
     <Container>
-      <CardGroup>
-        <Card style={{ width: '18rem' }}>
+      <CardGroup style={{ margin: '0.5rem'}}>
+        <Card style={{ width: '18rem', height: '35rem' }}>
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
             <div className='d-flex justify-content-center'>
