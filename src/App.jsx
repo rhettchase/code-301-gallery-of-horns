@@ -10,9 +10,16 @@ import allBeastsData from './assets/HornedBeast.json';
 function App() {
   const [filteredBeasts, setFilteredBeasts] = useState(allBeastsData);
   const handleSelect = (selection) => {
-    const updatedBeasts = allBeastsData.filter(beast => beast.horns === parseInt(selection));
+    let updatedBeasts;
+    if (isNaN(selection)) {
+      updatedBeasts = allBeastsData;
+    } else {
+      updatedBeasts = allBeastsData.filter(
+        (beast) => beast.horns === parseInt(selection)
+      );
+    }
     setFilteredBeasts(updatedBeasts);
-  }
+  };
   return (
     <>
       <Header title='Gallery of Horns' />
@@ -24,5 +31,3 @@ function App() {
 }
 
 export default App;
-
-
